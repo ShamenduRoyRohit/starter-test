@@ -4,14 +4,14 @@ import { Footer } from "@/components/Footer";
 import { NavBar } from "@/components/NavBar";
 
 export const metadata: Metadata = {
-  title: process.env.NEXT_PUBLIC_SITE_NAME || "Company",
-  description: "Modern, fast company website starter on Next.js + Vercel",
+  title: "ISHPATH",
+  description: "Ishpath is a cutting-edge SCADA development agency specializing in creating high-performance, SEO-friendly, and accessible SCADA using the latest technologies.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://example.com"),
   openGraph: {
-    title: process.env.NEXT_PUBLIC_SITE_NAME || "Company",
+    title:  "ISHPATH - AI Driven SCADA Design",
     description: "Modern, fast company website starter on Next.js + Vercel",
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://example.com",
-    siteName: process.env.NEXT_PUBLIC_SITE_NAME || "Company",
+    siteName: "ISHPATH",
     locale: "en_US",
     type: "website",
   },
