@@ -9,10 +9,7 @@ export default function Contact() {
       </p>
       <ul className="text-gray-700 space-y-2">
         <li>
-          <strong>Email:</strong> sroyrohit@gmail.com
-        </li>
-        <li>
-          <strong>Phone:</strong> 6477636623
+          <strong>Email:</strong> support@ishpath.com
         </li>
         <li>
           <strong>Address:</strong> Toronto, ON, Canada
