@@ -1,33 +1,39 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { Footer } from "@/components/Footer";
-import { NavBar } from "@/components/NavBar";
+import { ThemeProvider } from "@/components/ThemeProvider";
+
+function ConstructionBanner() {
+  return (
+    <div className="w-full bg-yellow-300 text-slate-900 text-sm py-2 text-center font-medium shadow-sm">
+      🚧 This site is under construction — Features are being updated.
+    </div>
+  );
+}
 
 export const metadata: Metadata = {
-  title: "ISHPATH",
-  description: "Ishpath is a cutting-edge SCADA development agency specializing in creating high-performance, SEO-friendly, and accessible SCADA using the latest technologies.",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://example.com"),
-  openGraph: {
-    title:  "ISHPATH - AI Driven SCADA Design",
-    description: "Modern, fast company website starter on Next.js + Vercel",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://example.com",
-    siteName: "ISHPATH",
-    locale: "en_US",
-    type: "website",
+  icons: {
+    icon: "/ishpath-logo.svg",
+    shortcut: "/ishpath-logo.svg",
+    apple: "/ishpath-logo.svg",
   },
-  robots: {
-    index: true,
-    follow: true,
-  }
+  title: "ISHPATH | AI-Driven SCADA & Industrial Web Platforms",
+  description:
+    "Ishpath builds high-performance, secure, and operator-friendly web SCADA and industrial visualization platforms.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-white text-gray-900 antialiased">
-        <NavBar />
-        <main className="mx-auto max-w-6xl px-4 py-10">{children}</main>
-        <Footer />
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <body className="bg-white text-slate-800 antialiased transition-colors duration-300 ease-out dark:bg-slate-950 dark:text-slate-50">
+        <ThemeProvider>
+          <ConstructionBanner />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

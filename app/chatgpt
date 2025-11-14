@@ -1,0 +1,301 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, ShieldCheck, Cpu, LineChart, Layers, PlugZap, Mail, Phone, Globe2 } from "lucide-react";
+
+// Drop-in landing page component for ISHPATH
+// - TailwindCSS utility classes
+// - Framer Motion micro-interactions
+// - shadcn/ui-ready class names (no direct import needed)
+// - Clean, modern, green-on-dark aesthetic
+// How to use: export default <ISHPATHHome /> inside your app router or page.
+
+const features = [
+  {
+    icon: Cpu,
+    title: "AI‑Driven SCADA Design",
+    desc: "Model-based, fault-aware HMI/SCADA with assistive workflows and safe automations.",
+  },
+  {
+    icon: LineChart,
+    title: "Data‑Driven Decisions",
+    desc: "Streaming analytics, KPIs, and alerting that surface what matters in real time.",
+  },
+  {
+    icon: PlugZap,
+    title: "Unlimited Connectivity",
+    desc: "DNP3, Modbus, IEC 61850, C37.118, MQTT, REST, OPC UA—bridged reliably and securely.",
+  },
+  {
+    icon: Layers,
+    title: "Plant‑Level Control",
+    desc: "BESS PPC & microgrid coordination (UL 1741 SB + IEEE 1547‑2018 aware).",
+  },
+];
+
+const stats = [
+  { label: "Deploys", value: "50+" },
+  { label: "Protocols", value: "12+" },
+  { label: "Latency", value: "<100 ms" },
+  { label: "Uptime", value: "99.95%" },
+];
+
+const badges = ["SCADA", "BESS/PPC", "GFM & GFL", "Edge + Cloud", "Security by Design"]; 
+
+export default function ISHPATHHome() {
+  return (
+    <div className="min-h-screen bg-neutral-950 text-neutral-100 selection:bg-emerald-400/30">
+      {/* Nav */}
+      <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60 border-b border-neutral-800/60">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 items-center justify-between">
+            <a href="#" className="flex items-center gap-2">
+              <div className="size-8 rounded-xl bg-gradient-to-br from-emerald-400 to-green-600 shadow-lg" />
+              <span className="font-semibold tracking-wide text-lg">ISHPATH</span>
+            </a>
+            <nav className="hidden md:flex items-center gap-6 text-sm text-neutral-300">
+              <a href="#services" className="hover:text-white">Services</a>
+              <a href="#why" className="hover:text-white">Why us</a>
+              <a href="#contact" className="hover:text-white">Contact</a>
+              <a href="#quote" className="inline-flex items-center gap-2 rounded-2xl border border-emerald-500/30 px-4 py-2 font-medium text-emerald-300 hover:text-white hover:bg-emerald-500/10">Get a quote <ArrowRight className="size-4"/></a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(1200px_600px_at_50%_-100px,rgba(16,185,129,0.20),transparent_70%)]" />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <motion.h1
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-4xl md:text-5xl font-extrabold tracking-tight"
+              >
+                Build trust with <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-green-500">AI‑driven</span> industrial technology.
+              </motion.h1>
+              <p className="mt-5 max-w-xl text-neutral-300">
+                ISHPATH designs high‑performance, accessible SCADA and site‑level controllers for BESS and microgrids—secure, observable, and tuned for compliance.
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                {badges.map((b) => (
+                  <span key={b} className="rounded-full border border-emerald-500/30 px-3 py-1 text-xs text-emerald-300/90">
+                    {b}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-8 flex flex-col sm:flex-row gap-3">
+                <a href="#quote" className="inline-flex items-center justify-center gap-2 rounded-2xl bg-emerald-500 px-5 py-3 font-semibold text-neutral-900 hover:bg-emerald-400">
+                  Start a project <ArrowRight className="size-4"/>
+                </a>
+                <a href="#services" className="inline-flex items-center justify-center gap-2 rounded-2xl border border-neutral-700 px-5 py-3 font-semibold hover:border-neutral-600">
+                  Explore services
+                </a>
+              </div>
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="relative"
+            >
+              <div className="aspect-[16/10] rounded-3xl border border-neutral-800 bg-neutral-900 shadow-2xl overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-300/10 via-transparent to-emerald-500/10" />
+                <div className="p-6 grid grid-cols-2 gap-4">
+                  {features.map((f, i) => (
+                    <div key={i} className="rounded-2xl bg-neutral-950/60 border border-neutral-800 p-4">
+                      <f.icon className="size-5 mb-2" />
+                      <div className="font-semibold">{f.title}</div>
+                      <div className="text-sm text-neutral-400">{f.desc}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {stats.map((s) => (
+              <motion.div key={s.label} initial={{ opacity: 0, y: 6 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="rounded-2xl border border-neutral-800 bg-neutral-900 p-6 text-center">
+                <div className="text-3xl font-extrabold text-emerald-400">{s.value}</div>
+                <div className="mt-1 text-sm text-neutral-400">{s.label}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section id="services" className="py-20 border-t border-neutral-800/60">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold">What we do</h2>
+            <p className="mt-3 text-neutral-300">From concept to commissioning, we deliver resilient control systems and elegant operator experiences.</p>
+          </div>
+          <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: "SCADA/HMI Engineering",
+                points: ["User‑centered HMI", "Alarm strategy", "Historian & reporting"],
+              },
+              {
+                title: "BESS & Microgrid Controls",
+                points: ["PPC design", "Droop & AGC interfaces", "Utility integration"],
+              },
+              {
+                title: "Protocols & Telemetry",
+                points: ["DNP3/IEC/MQTT", "OPC UA/REST", "Cyberhardening"],
+              },
+              {
+                title: "Edge + Cloud",
+                points: ["Gateway apps", "Time‑series pipelines", "Dashboards"],
+              },
+              {
+                title: "Compliance & Testing",
+                points: ["UL 1741 SB/IEEE 1547", "FAT/SAT plans", "Model validation"],
+              },
+              {
+                title: "Support & Training",
+                points: ["Runbooks", "SRE tooling", "Workshops"],
+              },
+            ].map((card, i) => (
+              <div key={i} className="rounded-3xl border border-neutral-800 bg-neutral-900 p-6">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-semibold">{card.title}</h3>
+                  <ShieldCheck className="size-5 text-emerald-400" />
+                </div>
+                <ul className="mt-3 space-y-2 text-sm text-neutral-300">
+                  {card.points.map((p) => (
+                    <li key={p} className="flex items-start gap-2">
+                      <span className="mt-1 size-1.5 rounded-full bg-emerald-400/80" />
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why */}
+      <section id="why" className="py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            <div className="rounded-3xl border border-neutral-800 bg-neutral-900 p-8">
+              <h3 className="text-2xl font-bold">Why ISHPATH</h3>
+              <ul className="mt-4 grid sm:grid-cols-2 gap-4 text-neutral-300">
+                {[
+                  "Industry‑trusted execution",
+                  "Practical AI in SCADA",
+                  "Modern web tooling",
+                  "Tailored solutions",
+                  "Performance & UX focus",
+                  "Full‑lifecycle support",
+                  "Proven outcomes",
+                  "Client‑centric delivery",
+                ].map((w) => (
+                  <li key={w} className="rounded-2xl border border-neutral-800 p-4">{w}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-3xl border border-neutral-800 bg-neutral-900 p-8">
+              <h3 className="text-2xl font-bold">What you get</h3>
+              <div className="mt-4 grid sm:grid-cols-2 gap-4">
+                {[
+                  { label: "Accessible by default", value: "WCAG‑focused UI" },
+                  { label: "Observable from day one", value: "metrics, logs, traces" },
+                  { label: "Security by design", value: "LE/2FA/VPN patterns" },
+                  { label: "Vendor‑neutral", value: "SEL, Tesla, SMA, Hitachi" },
+                ].map((i) => (
+                  <div key={i.label} className="rounded-2xl border border-neutral-800 p-4">
+                    <div className="text-sm text-neutral-400">{i.label}</div>
+                    <div className="font-semibold">{i.value}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id="quote" className="py-20 border-y border-neutral-800/60">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl overflow-hidden border border-emerald-700/40 bg-gradient-to-br from-neutral-900 to-neutral-950">
+            <div className="px-8 py-10 md:px-12 md:py-14 grid lg:grid-cols-3 gap-8 items-center">
+              <div className="lg:col-span-2">
+                <h3 className="text-2xl md:text-3xl font-extrabold">Let’s engineer something reliable—and beautiful.</h3>
+                <p className="mt-2 text-neutral-300">Tell us about your plant, signals, protocols, and timeline. We’ll propose an approach in 48 hours.</p>
+              </div>
+              <a href="#contact" className="justify-self-start inline-flex items-center gap-2 rounded-2xl bg-emerald-500 px-5 py-3 font-semibold text-neutral-900 hover:bg-emerald-400">
+                Get a proposal <ArrowRight className="size-4"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-10">
+            <div>
+              <h3 className="text-2xl font-bold">Contact</h3>
+              <p className="mt-3 text-neutral-300">We usually reply within one business day.</p>
+              <div className="mt-6 space-y-3 text-neutral-300">
+                <div className="flex items-center gap-3"><Mail className="size-4"/><span>hello@ishpath.com</span></div>
+                <div className="flex items-center gap-3"><Phone className="size-4"/><span>+1 (000) 000‑0000</span></div>
+                <div className="flex items-center gap-3"><Globe2 className="size-4"/><span>Toronto, Canada</span></div>
+              </div>
+            </div>
+            <form className="rounded-3xl border border-neutral-800 bg-neutral-900 p-6">
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm text-neutral-300">Name</label>
+                  <input placeholder="Your full name" className="rounded-xl bg-neutral-950 border border-neutral-800 px-3 py-2 outline-none focus:border-emerald-500" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm text-neutral-300">Email</label>
+                  <input type="email" placeholder="you@company.com" className="rounded-xl bg-neutral-950 border border-neutral-800 px-3 py-2 outline-none focus:border-emerald-500" />
+                </div>
+              </div>
+              <div className="mt-4 flex flex-col gap-2">
+                <label className="text-sm text-neutral-300">Message</label>
+                <textarea rows={5} placeholder="What are you building?" className="rounded-xl bg-neutral-950 border border-neutral-800 px-3 py-2 outline-none focus:border-emerald-500" />
+              </div>
+              <button type="button" className="mt-4 inline-flex items-center gap-2 rounded-2xl bg-emerald-500 px-5 py-3 font-semibold text-neutral-900 hover:bg-emerald-400">
+                Send message <ArrowRight className="size-4"/>
+              </button>
+              <p className="mt-3 text-xs text-neutral-500">By sending, you agree to our <a className="underline" href="#">Privacy</a> and <a className="underline" href="#">Terms</a>.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-neutral-800/60 py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-center gap-3">
+              <div className="size-6 rounded-lg bg-gradient-to-br from-emerald-400 to-green-600" />
+              <span className="text-sm text-neutral-400">© {new Date().getFullYear()} ISHPATH. All rights reserved.</span>
+            </div>
+            <div className="flex items-center gap-6 text-sm text-neutral-400">
+              <a className="hover:text-white" href="#">Privacy</a>
+              <a className="hover:text-white" href="#">Terms</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

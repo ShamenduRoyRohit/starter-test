@@ -1,4 +1,4 @@
-// File: /Users/tandrachakraborty/Desktop/vercel-company-starter/app/layout.tsx
+// File: /Users/tandra.chakraborty/starter-test/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
