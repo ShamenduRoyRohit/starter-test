@@ -16,7 +16,6 @@ export default function HomePage() {
 
       <div className="flex-1">
         <Hero />
-        <Platforms />
         <Solutions />
         <Services />
         <WhyIshpath />
