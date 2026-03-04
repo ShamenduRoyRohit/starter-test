@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-center md:py-20">
         <div className="space-y-6">
           <span className="inline-flex rounded-full border border-brand-blue-100 bg-brand-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-blue-600 dark:border-brand-blue-500/40 dark:bg-brand-blue-500/10 dark:text-brand-blue-100">
-            AI-driven SCADA & Web Platforms
+            Electrical Engineering and Software Applications
             </span>
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl dark:text-slate-50">
             Build trust with{" "}

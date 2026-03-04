@@ -1,9 +1,8 @@
 // components/WhyIshpath.tsx
 const reasons = [
   "Trusted by industry leaders",
-  "Practical application of AI in SCADA design",
   "Expertise in modern web technologies",
-  "Customized solutions tailored to your needs",
+  "Customized solutions tailored to your Electrical System Design needs",
   "Focus on performance and user experience",
   "Comprehensive support and maintenance",
   "Proven track record of success",
