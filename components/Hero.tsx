@@ -12,7 +12,7 @@ export default function Hero() {
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl dark:text-slate-50">
             Build trust with{" "}
             <span className="text-brand-blue-600 dark:text-brand-blue-300">
-                AI-driven technology
+                Cutting-Edge Technology
             </span>{" "}
             for utilities and critical power.
             </h1>
