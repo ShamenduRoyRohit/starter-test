@@ -8,7 +8,7 @@ export default function CTA() {
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-4 md:flex-row md:items-center">
         <div>
           <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-            Ready to modernize your SCADA?
+            Ready to automate?
           </h2>
           <p className="mt-2 text-sm text-slate-900/80">
             Share a brief overview of your plant or project, and we’ll outline a
