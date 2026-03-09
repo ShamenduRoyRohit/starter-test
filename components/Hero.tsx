@@ -1,3 +1,4 @@
+import HeroSlideshow from "./HeroSlideshow";
 import ServicesSplit from "./ServicesSplit";
 import Image from "next/image";
 
@@ -117,15 +118,20 @@ export default function Hero() {
               design, integrate, and improve complex technical operations.
             </p>
           </div>
-
-          <div className="relative">
+          
+          {
+          <div>
+            <HeroSlideshow />
+          </div>
+          
+          /* <div className="relative">
             <Image src="/Engineering.png"
               alt="Electrical engineering and software intelligence platform"
               width={900}
               height={600}
               className="rounded-2xl shadow-lg"
             />
-          </div> 
+          </div>  */}
         </div>
       </div>
     </section>
