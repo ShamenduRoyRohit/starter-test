@@ -1,12 +1,13 @@
 // components/WhyIshpath.tsx
+
 const reasons = [
-  "Trusted by industry leaders",
-  "Expertise in modern web technologies",
-  "Customized solutions tailored to your Electrical System Design needs",
-  "Focus on performance and user experience",
-  "Comprehensive support and maintenance",
-  "Proven track record of success",
-  "Client-centric approach",
+  "Electrical engineering expertise combined with modern software development",
+  "Ability to bridge physical infrastructure and digital systems",
+  "Solutions designed for complex industrial and infrastructure environments",
+  "AI-driven analytics and data insights for engineering systems",
+  "Focus on reliability, performance, and long-term operability",
+  "Clear technical documentation and engineering traceability",
+  "Independent, client-focused engineering approach",
 ];
 
 export default function WhyIshpath() {
@@ -21,8 +22,9 @@ export default function WhyIshpath() {
         </h2>
 
         <p className="mt-2 max-w-2xl text-sm text-slate-600 dark:text-slate-300">
-          Utility-aware engineering, combined with modern software practices,
-          so your SCADA is both reliable and future-ready.
+          Ishpath brings together electrical engineering expertise and modern
+          software development to solve complex technical challenges across
+          industrial and infrastructure systems.
         </p>
 
         <div className="mt-6 grid gap-3 md:grid-cols-2">

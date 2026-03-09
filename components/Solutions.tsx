@@ -3,7 +3,7 @@ const solutions = [
   {
     title: "Utility-scale solar + storage",
     description:
-      "Web SCADA and PPC visualization tuned for IEEE 1547-2018 and UL 1741 SB behavior.",
+      "Monitoring and PPC visualization tuned for IEEE 1547-2018 and UL 1741 SB behavior.",
   },
   {
     title: "Microgrids & critical power",
@@ -18,7 +18,7 @@ const solutions = [
   {
     title: "Industrial plants",
     description:
-      "Modernize legacy HMI/SCADA with responsive browser UIs and OT-aware data models.",
+      "Modernize legacy HMI with responsive browser UIs and OT-aware data models.",
   },
 ];
 

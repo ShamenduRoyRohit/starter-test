@@ -1,91 +1,122 @@
 // components/Services.tsx
-const services = [
+
+const capabilityGroups = [
   {
-    title: "Hybrid Plant Stability (Machines + Inverters)",
+    title: "Electrical Engineering",
     description:
-      "EMT and dynamic stability assessments for hybrid systems combining synchronous machines, grid-forming BESS and inverter-based generation—focused on weak-grid behavior and control interaction risk.",
+      "Engineering analysis and design for reliable industrial, infrastructure, and energy systems.",
+    services: [
+      "Electrical system design",
+      "Power system studies",
+      "Protection & coordination",
+      "Commissioning support",
+      "Industrial electrification",
+      "Technical due diligence",
+    ],
   },
   {
-    title: "Grid-Forming & Inverter Controls Validation",
+    title: "Software Engineering",
     description:
-      "Controller tuning reviews, droop/virtual inertia strategy evaluation, ride-through behavior validation and interaction screening across PPC, inverters and plant-level controls.",
+      "Custom software platforms, data systems, and AI-enabled tools that improve engineering workflows and operational insight.",
+    services: [
+      "Custom web applications",
+      "Engineering dashboards & reporting platforms",
+      "Workflow automation tools",
+      "AI-assisted data analysis",
+      "Machine learning models for operational insights",
+      "Predictive analytics for infrastructure systems",
+      "Anomaly detection & event intelligence",
+      "Cloud-based engineering platforms",
+    ],
   },
   {
-    title: "Protection Engineering for Inverter-Dominated Systems",
+    title: "Systems Integration",
     description:
-      "Protection philosophy and coordination tailored to limited and dynamic inverter fault current—relay settings, misoperation risk review and practical mitigation plans.",
+      "Connecting engineering systems and digital platforms into practical, usable solutions.",
+    services: [
+      "Data integration pipelines",
+      "Operational reporting systems",
+      "Digital engineering workflows",
+      "Infrastructure monitoring tools",
+      "Cross-system interoperability",
+      "End-to-end technical solution design",
+    ],
   },
-  {
-    title: "Black Start & Islanding Readiness",
-    description:
-      "End-to-end black-start and islanding transition studies for microgrids and critical sites—sequencing logic, stability margins, re-synchronization strategy and test planning.",
-  },
-  {
-    title: "Power Quality, Harmonics & Resonance Risk",
-    description:
-      "Harmonic screening, impedance/resonance checks and mitigation design to reduce nuisance trips and overheating—especially in sites with large drives, transformers and inverter plants.",
-  },
-  {
-    title: "Commissioning Diagnostics & Grid Code Support",
-    description:
-      "Commissioning support that shortens schedule risk—event capture strategy, disturbance test readiness, settings verification and clear technical reporting for utilities and AHJs.",
-  },
-  {
-    title: "Industrial Electrification & Heavy Industry Integration",
-    description:
-      "Feasibility and integration engineering for electrifying heavy loads (large motors, process plants, mining sites)—including motor starting impacts, voltage regulation and reliability planning.",
-  },
-  {
-    title: "Independent Technical Due Diligence",
-    description:
-      "Owner’s-engineer style reviews of designs, studies and vendor claims—focused on stability, protection, compliance and long-term operability before you commit capital.",
-  },
+];
+
+const outcomes = [
+  "Reliable electrical system performance",
+  "Faster engineering and operational workflows",
+  "Better visibility across technical systems",
+  "Reduced technical and delivery risk",
+  "Clear documentation and engineering traceability",
+  "Practical integration between engineering and software",
 ];
 
 export default function Services() {
   return (
     <section
       id="services"
-      className="border-b border-slate-200 bg-white py-14 dark:border-slate-900 dark:bg-slate-950"
+      className="border-b border-slate-200 bg-white py-16 dark:border-slate-900 dark:bg-slate-950"
     >
       <div className="mx-auto max-w-6xl px-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl dark:text-slate-50">
-          Services
-        </h2>
-        <p className="mt-2 max-w-2xl text-sm text-slate-600 dark:text-slate-300">
-          We help owners, EPCs and OEMs de-risk hybrid power systems—where rotating
-          machines meet inverter-based resources. Our work focuses on stability,
-          protection, commissioning readiness and long-term operability.
-        </p>
+        <div className="max-w-3xl">
+          <p className="text-sm font-medium text-emerald-600 dark:text-emerald-400">
+            Electrical Engineering + Software Engineering
+          </p>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {services.map((service) => (
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl dark:text-slate-50">
+            Capabilities
+          </h2>
+
+          <p className="mt-3 text-sm text-slate-600 dark:text-slate-300">
+            We combine electrical engineering expertise with modern software
+            development and AI-powered analytics to design, analyze, and improve
+            complex technical systems.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {capabilityGroups.map((group) => (
             <article
-              key={service.title}
-              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900/60 dark:shadow-none"
+              key={group.title}
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900/60"
             >
-              <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-50">
-                {service.title}
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
+                {group.title}
               </h3>
-              <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">
-                {service.description}
+
+              <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                {group.description}
               </p>
+
+              <ul className="mt-5 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+                {group.services.map((service) => (
+                  <li key={service} className="flex items-start gap-2">
+                    <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <span>{service}</span>
+                  </li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>
 
-        <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-900/30">
-          <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-50">
+        <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-900/30">
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-900 dark:text-slate-50">
             Typical Outcomes
           </h3>
-          <ul className="mt-3 grid gap-2 text-xs text-slate-700 dark:text-slate-300 md:grid-cols-2">
-            <li>• Reduced commissioning delays and fewer failed grid tests</li>
-            <li>• Lower oscillation and nuisance-trip risk in weak grids</li>
-            <li>• Protection schemes aligned to inverter fault behavior</li>
-            <li>• Clear, utility-ready documentation and settings traceability</li>
-            <li>• Practical mitigation options with cost/benefit tradeoffs</li>
-            <li>• Better confidence for owners, lenders and insurers</li>
-          </ul>
+
+          <div className="mt-4 grid gap-3 md:grid-cols-2">
+            {outcomes.map((item) => (
+              <div
+                key={item}
+                className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

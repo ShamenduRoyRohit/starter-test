@@ -1,4 +1,5 @@
 import ServicesSplit from "./ServicesSplit";
+import Image from "next/image";
 
 // components/Hero.tsx
 // export default function Hero() {
@@ -104,7 +105,7 @@ export default function Hero() {
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="text-sm font-medium text-emerald-600 dark:text-emerald-400">
-              Electrical Engineering + Software Engineering
+              Engineering intelligent infrastructure through electrical expertise, software systems, and applied AI.
             </p>
 
             <h1 className="mt-3 text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl dark:text-slate-50">
@@ -117,9 +118,14 @@ export default function Hero() {
             </p>
           </div>
 
-          <div>
-            <ServicesSplit />
-          </div>
+          <div className="relative">
+            <Image src="/Engineering.png"
+              alt="Electrical engineering and software intelligence platform"
+              width={900}
+              height={600}
+              className="rounded-2xl shadow-lg"
+            />
+          </div> 
         </div>
       </div>
     </section>

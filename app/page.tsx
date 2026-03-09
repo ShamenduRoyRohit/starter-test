@@ -3,11 +3,10 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/NavBar";
 import Hero from "@/components/Hero";
-import Platforms from "@/components/Platforms";
-import Solutions from "@/components/Solutions";
 import Services from "@/components/Services";
 import WhyIshpath from "@/components/WhyIshpath";
 import CTA from "@/components/CTS";
+import HowWeWork from "@/components/HowWeWork";
 
 export default function HomePage() {
   return (
@@ -16,9 +15,9 @@ export default function HomePage() {
 
       <div className="flex-1">
         <Hero />
-        <Solutions />
         <Services />
         <WhyIshpath />
+        <HowWeWork />
         <CTA />
       </div>
 

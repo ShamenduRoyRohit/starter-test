@@ -3,13 +3,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-function ConstructionBanner() {
-  return (
-    <div className="w-full bg-yellow-300 text-slate-900 text-sm py-2 text-center font-medium shadow-sm">
-      🚧 This site is under construction — Features are being updated.
-    </div>
-  );
-}
 
 export const metadata: Metadata = {
   icons: {
