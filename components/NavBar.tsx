@@ -7,10 +7,9 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 const navItems = [
-  { label: "Platforms", href: "#platforms" },
-  { label: "Solutions", href: "#solutions" },
   { label: "Services", href: "#services" },
   { label: "Why Ishpath", href: "#why-ishpath" },
+  { label: "Approach ", href: "#howwework"},
   { label: "Contact", href: "#contact" },
 ];
 
