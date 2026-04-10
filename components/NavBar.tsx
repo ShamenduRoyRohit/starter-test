@@ -18,9 +18,9 @@ const navItems = [
       { label: "Systems Integration", href: "/services/systems-integration" },
     ].sort((a, b) => a.label.localeCompare(b.label)),
   },
-  { label: "Why Ishpath", href: "#why-ishpath" },
+  { label: "Why Ishpath", href: "/#why-ishpath" },
   { label: "Approach ", href: "#howwework"},
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const SunIcon = () => (
@@ -198,7 +198,7 @@ export default function Navbar() {
             </span>
           </button>
           <a
-            href="#contact"
+            href="/#contact"
             className="rounded-full bg-brand-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-orange-600"
           >
             Get a Quote
@@ -244,7 +244,7 @@ export default function Navbar() {
               )
             ))}
             <a
-              href="#contact"
+              href="/#contact"
               className="mt-2 rounded-full bg-emerald-600 px-4 py-2 text-center text-sm font-semibold text-white hover:bg-emerald-500"
               onClick={() => setOpen(false)}
             >
