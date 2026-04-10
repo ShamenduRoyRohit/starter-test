@@ -1,15 +1,10 @@
-[00:00:00.679] Server  LOG     ✓ Ready in 505ms
-[00:00:17.082] Server  WARN    ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
-[00:00:17.364] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:17.364] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:17.364] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:17.364] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.238] Server  LOG     ✓ Compiled in 388ms
-[00:01:12.588] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:12.588] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:12.588] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:12.588] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:18.459] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:18.460] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:18.460] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:18.460] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:00.466] Server  LOG     ✓ Ready in 304ms
+[00:00:37.341] Server  WARN    ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+[00:00:37.608] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:37.608] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:37.608] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:37.608] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:41.608] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:41.608] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:41.608] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:41.608] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

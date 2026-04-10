@@ -3,4 +3,4 @@ node_modules
 trace
 *.log
 *.sst
-
+LOG

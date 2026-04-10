@@ -1,5 +1,4 @@
 {
   "/page": "app/page.js",
-  "/services/project-management/asset/page": "app/services/project-management/asset/page.js",
-  "/services/project-management/pmo/page": "app/services/project-management/pmo/page.js"
+  "/services/project-management/asset/page": "app/services/project-management/asset/page.js"
 }
