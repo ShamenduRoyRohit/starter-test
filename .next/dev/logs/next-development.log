@@ -1,0 +1,625 @@
+[00:00:00.587] Server  LOG     ✓ Ready in 380ms
+[00:00:01.327] Server  WARN    ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+[00:00:02.693] Browser WARN    Image with src "https://images.unsplash.com/photo-1636790921342-cbdc4b783de6?auto=format&fit=crop&w=2200&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:04.515] Browser WARN    Image with src "/images/background.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:04.794] Browser WARN    Image with src "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:04.794] Browser WARN    Image with src "https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:04.794] Browser WARN    Image with src "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.751] Browser WARN    Image with src "https://images.unsplash.com/photo-1636790921342-cbdc4b783de6?auto=format&fit=crop&w=2200&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.582] Browser WARN    Image with src "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.582] Browser WARN    Image with src "https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.582] Browser WARN    Image with src "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.582] Browser WARN    Image with src "/images/background.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.736] Browser WARN    Image with src "/slide2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:16.523] Browser WARN    Image with src "/slide1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:16.523] Browser WARN    Image with src "/slide3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:29.995] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:29.995] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:29.995] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:29.995] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:29.995] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:37.391] Browser WARN    Image with src "https://images.unsplash.com/photo-1636790921342-cbdc4b783de6?auto=format&fit=crop&w=2200&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:40.946] Browser WARN    Image with src "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:40.946] Browser WARN    Image with src "https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:40.946] Browser WARN    Image with src "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:43.520] Browser WARN    Image with src "/images/background.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:43.520] Browser WARN    Image with src "/slide2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:45.419] Browser WARN    Image with src "/slide1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:45.419] Browser WARN    Image with src "/slide3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:49.542] Browser WARN    Image with src "https://images.unsplash.com/photo-1636790921342-cbdc4b783de6?auto=format&fit=crop&w=2200&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:49.542] Browser WARN    Image with src "https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:49.542] Browser WARN    Image with src "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:49.542] Browser WARN    Image with src "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:49.542] Browser WARN    Image with src "/images/background.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:49.542] Browser WARN    Image with src "/slide2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:49.542] Browser WARN    Image with src "/slide1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:49.542] Browser WARN    Image with src "/slide3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:22.511] Browser WARN    Image with src "https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:22.511] Browser WARN    Image with src "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:22.511] Browser WARN    Image with src "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:22.511] Browser WARN    Image with src "/images/background.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:22.511] Browser WARN    Image with src "/slide1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:22.511] Browser WARN    Image with src "/slide3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:22.511] Browser WARN    Image with src "https://images.unsplash.com/photo-1636790921342-cbdc4b783de6?auto=format&fit=crop&w=2200&q=80" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:14.966] Browser WARN    Image with src "/slide2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:30.465] Browser WARN    Image with src "/slide2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:30.465] Browser WARN    Image with src "/slide3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:30.465] Browser WARN    Image with src "/slide2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:06:31.704] Server  LOG     ✓ Compiled in 29ms
+[00:06:31.712] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:06:31.712] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:06:31.964] Browser WARN    Image with src "/slide2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:31.964] Browser WARN    Image with src "/slide3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:31.964] Browser WARN    Image with src "/slide2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:06:40.646] Server  LOG     ✓ Compiled in 15ms
+[00:06:40.649] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:06:59.530] Browser WARN    Image with src "/slide2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:59.530] Browser WARN    Image with src "/slide3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:59.530] Browser WARN    Image with src "/slide2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:07:02.549] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:07:12.744] Browser WARN    Image with src "/slide3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:12.744] Browser WARN    Image with src "/slide2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:14.007] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:08:46.299] Server  LOG     ✓ Compiled in 12ms
+[00:08:57.149] Browser WARN    Image with src "/slide2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:57.149] Browser WARN    Image with src "/slide3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:57.149] Browser WARN    Image with src "/slide2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:10:41.574] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:11:36.405] Server  LOG     ✓ Compiled in 18ms
+[00:11:59.712] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:17:32.046] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:18:26.345] Server  LOG     ✓ Compiled in 16ms
+[00:20:47.359] Server  LOG     ✓ Compiled in 67ms
+[00:20:47.465] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:20:58.475] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:20:58.567] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:20:58.705] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:20:58.705] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:00.161] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:21:00.296] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:00.296] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:00.913] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:21:01.049] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:01.049] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:02.184] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:21:02.320] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:02.320] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:02.809] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:21:02.820] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:02.883] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:21:03.019] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:03.019] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:03.084] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:21:03.220] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:03.220] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:03.866] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:21:03.894] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:03.951] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:21:04.087] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:04.087] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:04.146] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:21:04.282] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:21:04.282] Browser ERROR   ./app/services/systems-integration/page.tsx:3:10
+Ecmascript file had an error
+  1 | export const metadata = { title: "Systems Integration" };
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 | import ServiceIcon from "@/components/ServiceIcon";
+  5 |
+  6 | const services = [
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:22:17.996] Browser ERROR   uncaughtError: Error: ./app/services/systems-integration/page.tsx:3:14
+Ecmascript file had an error
+  1 | "use client";
+  2 |
+> 3 | export const metadata = { title: "Systems Integration" };
+    |              ^^^^^^^^
+  4 |
+  5 | import { useState } from "react";
+  6 | import ServiceIcon from "@/components/ServiceIcon";
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/services/systems-integration/page.tsx [Client Component Browser]
+    ./app/services/systems-integration/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/services/systems-integration/page.tsx [Client Component SSR]
+    ./app/services/systems-integration/page.tsx [Server Component]
+
+
+[00:22:18.136] Browser ERROR   ./app/services/systems-integration/page.tsx:3:14
+Ecmascript file had an error
+  1 | "use client";
+  2 |
+> 3 | export const metadata = { title: "Systems Integration" };
+    |              ^^^^^^^^
+  4 |
+  5 | import { useState } from "react";
+  6 | import ServiceIcon from "@/components/ServiceIcon";
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/services/systems-integration/page.tsx [Client Component Browser]
+    ./app/services/systems-integration/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/services/systems-integration/page.tsx [Client Component SSR]
+    ./app/services/systems-integration/page.tsx [Server Component]
+[00:22:18.136] Browser ERROR   ./app/services/systems-integration/page.tsx:3:14
+Ecmascript file had an error
+  1 | "use client";
+  2 |
+> 3 | export const metadata = { title: "Systems Integration" };
+    |              ^^^^^^^^
+  4 |
+  5 | import { useState } from "react";
+  6 | import ServiceIcon from "@/components/ServiceIcon";
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/services/systems-integration/page.tsx [Client Component Browser]
+    ./app/services/systems-integration/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/services/systems-integration/page.tsx [Client Component SSR]
+    ./app/services/systems-integration/page.tsx [Server Component]
+[00:22:41.781] Server  LOG     ✓ Compiled in 29ms
+[00:22:42.099] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:22:42.099] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:22:42.099] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:22:42.099] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:04.497] Server  LOG     ✓ Compiled in 23ms
+[00:25:48.780] Server  LOG     ✓ Compiled in 18ms
+[00:28:38.073] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:38.437] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:38.437] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AssetPage' cannot have a negative time stamp.
+[00:28:42.632] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:42.910] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:42.910] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AssetPage' cannot have a negative time stamp.
+[00:28:43.614] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:43.736] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:43.742] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:43.993] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:43.993] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AssetPage' cannot have a negative time stamp.
+[00:28:44.302] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:44.508] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:44.508] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AssetPage' cannot have a negative time stamp.
+[00:28:44.516] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:44.773] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:28:44.773] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AssetPage' cannot have a negative time stamp.
+[00:30:28.178] Server  LOG     ✓ Compiled in 15ms
+[00:30:54.287] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/pmo.html'
+[00:30:54.422] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/pmo.html'
+[00:31:04.982] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/pmo.html'
+[00:31:05.348] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/pmo.html'
+[00:31:05.348] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​PMOPage' cannot have a negative time stamp.
+[00:31:24.170] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/asset.html'
+[00:31:24.387] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/asset.html'
+[00:31:24.971] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/pmo.html'
+[00:31:25.228] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/pmo.html'
+[00:31:25.228] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​PMOPage' cannot have a negative time stamp.
+[00:31:25.812] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/asset.html'
+[00:31:26.066] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/asset.html'
+[00:31:26.066] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AssetPage' cannot have a negative time stamp.
+[00:31:38.880] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:31:39.165] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/public/asset.html'
+[00:31:39.165] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AssetPage' cannot have a negative time stamp.
+[00:31:52.267] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/asset.html'
+[00:31:52.561] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, open '/Users/tandra.chakraborty/starter-test/asset.html'
+[00:31:52.561] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AssetPage' cannot have a negative time stamp.
+[00:32:42.964] Server  LOG     ✓ Compiled in 14ms
+[00:33:42.061] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:33:42.061] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:42.061] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:42.061] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:42.061] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:36:44.769] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:36:44.769] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:36:44.769] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:36:44.769] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:36:44.769] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

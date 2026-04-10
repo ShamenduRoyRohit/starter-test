@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Navbar from "@/components/NavBar";
 
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body className="bg-white text-slate-800 antialiased transition-colors duration-300 ease-out dark:bg-slate-950 dark:text-slate-50">
         <ThemeProvider>
-          
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>

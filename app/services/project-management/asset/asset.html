@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asset Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f7fa;
+  --surface:#ffffff;
+  --surface-2:#eef3f7;
+  --ink:#172633;
+  --muted:#60717f;
+  --line:rgba(23,38,51,.08);
+  --navy:#0e1a24;
+  --navy-2:#142736;
+  --blue:#5c8fb1;
+  --gold:#c6923d;
+  --shadow:0 14px 40px rgba(9,20,30,.08);
+  --radius:22px;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+.topbar{position:sticky;top:0;z-index:100;background:rgba(14,26,36,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;justify-content:space-between;align-items:center;min-height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;letter-spacing:.02em}
+.brand-mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--blue),#2f566f)}
+.nav-links{display:flex;gap:8px;flex-wrap:wrap}
+.nav-links a{color:#dbe6ee;padding:10px 14px;border-radius:999px;font-size:14px}
+.nav-links a.active,.nav-links a:hover{background:rgba(255,255,255,.08);color:#fff}
+.hero{position:relative;color:#fff;padding:110px 0 90px;background:linear-gradient(rgba(10,18,28,.56),rgba(10,18,28,.62)), url('https://images.unsplash.com/photo-1736843638222-c01bb2cd6bf4?auto=format&fit=crop&w=2200&q=80') center/cover no-repeat}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:end}
+.eyebrow{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.12);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:700}
+.hero h1{font-size:clamp(42px,6vw,70px);line-height:.95;letter-spacing:-.04em;max-width:10ch;margin:18px 0}
+.hero p{max-width:650px;font-size:18px;color:#d5e1ea;margin:0 0 26px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:999px;font-weight:700}
+.btn.primary{background:#fff;color:#152634}
+.btn.secondary{border:1px solid rgba(255,255,255,.14);color:#fff;background:rgba(255,255,255,.05)}
+.hero-card{background:rgba(16,31,42,.82);border:1px solid rgba(255,255,255,.1);padding:24px;border-radius:24px;box-shadow:var(--shadow)}
+.hero-card h3{margin:0 0 12px;font-size:24px}
+.hero-card p{font-size:15px;margin:0 0 10px;color:#d5e1ea}
+.hero-card ul{margin:0;padding-left:18px;color:#eef4f8}
+.band{margin-top:-30px;position:relative;z-index:5}
+.band-grid{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+.band-item{padding:24px;border-right:1px solid var(--line)}
+.band-item:last-child{border-right:none}
+.band-item small{display:block;color:#48667c;text-transform:uppercase;font-weight:800;letter-spacing:.12em;margin-bottom:8px}
+.band-item h3{margin:0 0 8px;font-size:24px;line-height:1.05}
+.band-item p{margin:0;color:var(--muted)}
+.section{padding:84px 0}
+.section.alt{background:linear-gradient(180deg,#eef3f7,#f7fafc)}
+.head{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:end;margin-bottom:28px}
+.head h2{margin:0;font-size:clamp(30px,4vw,50px);line-height:.98;letter-spacing:-.04em}
+.head p{margin:0;color:var(--muted);font-size:17px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:var(--surface);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 10px;font-size:28px;line-height:1}
+.card p{margin:0;color:var(--muted)}
+.card ul{list-style:none;margin:18px 0 0;padding:0}
+.card li{padding:11px 0;border-top:1px solid var(--line)}
+.num{width:40px;height:40px;border-radius:12px;background:var(--surface-2);display:grid;place-items:center;font-weight:800;color:#3a5e75;margin-bottom:16px}
+.feature{overflow:hidden}
+.feature img{width:100%;height:100%;min-height:420px;object-fit:cover}
+.copy h3{font-size:38px;line-height:.98;letter-spacing:-.04em;margin:0 0 12px}
+.copy p{margin:0 0 16px;color:var(--muted);font-size:17px}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills span{background:var(--surface-2);padding:10px 14px;border-radius:999px;font-weight:700;color:#35546a;font-size:14px}
+.dark{background:linear-gradient(180deg,#132331,#0f1b25);color:#fff}
+.dark .head p,.dark .copy p{color:#c6d5de}
+.diagram{background:linear-gradient(180deg,#fff,#edf3f7);border-radius:28px;padding:24px;box-shadow:var(--shadow);position:relative;min-height:460px}
+.center-box{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:240px;aspect-ratio:1;border-radius:28px;background:linear-gradient(180deg,#173247,#112333);color:#fff;padding:24px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.center-box small,.node small{display:block;text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:11px;opacity:.75;margin-bottom:8px}
+.center-box h3,.node h4{margin:0 0 8px;line-height:1}
+.center-box p,.node p{margin:0;font-size:14px;line-height:1.55}
+.node{position:absolute;width:210px;background:#fff;border-radius:20px;padding:16px;box-shadow:var(--shadow)}
+.node.tl{left:18px;top:18px}.node.tr{right:18px;top:18px}.node.bl{left:18px;bottom:18px}.node.br{right:18px;bottom:18px}
+.lines{position:absolute;inset:0}
+.lines svg{width:100%;height:100%}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{background:linear-gradient(180deg,#173247,#112333);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:22px}
+.step .num{background:rgba(255,255,255,.08);color:#fff}
+.step h4{margin:0 0 10px;font-size:22px}.step p{margin:0;color:#c6d5de}
+.results{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.result{background:#fff;border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+.result strong{display:block;font-size:30px;line-height:1;margin-bottom:8px;color:#173247}
+.result span{color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery .tile{position:relative;overflow:hidden;border-radius:22px;box-shadow:var(--shadow)}
+.gallery img{width:100%;height:240px;object-fit:cover}
+.tile .overlay{position:absolute;inset:auto 0 0 0;padding:18px;background:linear-gradient(180deg,transparent,rgba(10,18,28,.84));color:#fff}
+.tile h4{margin:0 0 6px;font-size:20px}.tile p{margin:0;color:#dce7ef;font-size:14px}
+.cta{padding:10px 0 100px}
+.cta-box{background:linear-gradient(135deg,#122434,#0f1a24);color:#fff;border-radius:30px;padding:42px;box-shadow:var(--shadow)}
+.cta-box h2{margin:0 0 12px;font-size:clamp(32px,4vw,52px);line-height:.95;letter-spacing:-.04em;max-width:12ch}
+.cta-box p{margin:0 0 20px;color:#d4e0e8;max-width:720px}
+.footer{padding:18px 0 36px;color:#708391;font-size:14px}
+@media (max-width:980px){
+  .hero-grid,.head,.grid-3,.grid-2,.process,.results,.gallery{grid-template-columns:1fr}
+  .band-grid{grid-template-columns:1fr}
+  .band-item{border-right:none;border-bottom:1px solid var(--line)}
+  .band-item:last-child{border-bottom:none}
+  .diagram{min-height:auto;display:grid;gap:14px}
+  .center-box,.node{position:relative;left:auto;right:auto;top:auto;bottom:auto;transform:none;width:auto}
+  .lines{display:none}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <nav class="nav-links">
+      <a class="" href="pmo.html">PMO Services</a>
+      <a class="active" href="asset.html">Asset Management</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Asset Management</span>
+      <h1>Asset management for fleet visibility, maintenance control, and reliability.</h1>
+      <p>Structured asset management services for generators, compressors, tanks, pressurized systems, and other critical mechanical and electrical equipment. The focus is better asset visibility, stronger maintenance discipline, and more reliable operating performance.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#services">Explore Services</a>
+        <a class="btn secondary" href="#contact">Request Consultation</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h3>Asset service focus</h3>
+      <p>Asset performance improves when the asset base is organized, maintenance routines are structured, and operating workflows are continuously improved.</p>
+      <ul><li>Fleet and asset register development</li><li>Maintenance planning and scheduling</li><li>Reliability-focused process improvement</li><li>Lean Six Sigma support for maintenance workflows</li></ul>
+    </aside>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <div class="band-grid"><div class="band-item"><small>Visibility</small><h3>Fleet Management</h3><p>Asset registers, hierarchy, classification, and equipment status visibility across critical assets.</p></div><div class="band-item"><small>Reliability</small><h3>Maintenance Systems</h3><p>Preventive maintenance planning, work order structure, and more consistent maintenance execution.</p></div><div class="band-item"><small>Improvement</small><h3>Lean Six Sigma</h3><p>Workflow refinement, standardization, and waste reduction across operations and maintenance.</p></div></div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head">
+      <h2>Asset services built for reliability, consistency, and control.</h2>
+      <p>The service structure stays focused on the three areas clients expect to see from a serious asset management provider: control of the asset base, maintenance systems that support reliability, and process improvement that strengthens day-to-day execution.</p>
+    </div>
+    <div class="grid-3"><div class="card"><div class="num">01</div><h3>Fleet Management</h3><p>Fleet management begins with a reliable asset base. Equipment information, hierarchy, status, and criticality are organized into a clearer structure so maintenance and operations teams can work from the same view.</p><ul><li>Asset registers and hierarchy</li><li>Equipment classification and criticality</li><li>Status and location visibility</li><li>Improved consistency in asset data</li></ul></div><div class="card"><div class="num">02</div><h3>Maintenance Systems</h3><p>Maintenance systems turn reliability into a routine discipline. Preventive planning, task scheduling, work order orderliness, and performance tracking support steadier upkeep of critical equipment.</p><ul><li>Preventive maintenance planning</li><li>Maintenance scheduling and cadence</li><li>Work order structure and documentation</li><li>Maintenance performance visibility</li></ul></div><div class="card"><div class="num">03</div><h3>Lean Six Sigma Improvement</h3><p>Lean Six Sigma methods improve maintenance and operating workflows by clarifying handoffs, removing waste, and standardizing repeat activities. The result is better use of time, labour, and maintenance effort.</p><ul><li>Process mapping and workflow review</li><li>Waste reduction in routine maintenance</li><li>Standard operating procedures</li><li>Continuous improvement support</li></ul></div></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap grid-2">
+    <div class="card feature"><img src="https://images.unsplash.com/photo-1670689334799-cdc6777db8cc?auto=format&fit=crop&w=2200&q=80" alt=""></div>
+    <div class="card copy">
+      <h3>Built for asset-heavy environments where uptime matters.</h3>
+      <p>When facilities depend on equipment performance, asset management cannot stay abstract. Better control of the asset base, better maintenance planning, and stronger workflow discipline all contribute directly to reliability, safety, and lifecycle value.</p>
+      <div class="pills"><span>Generators and compressors</span><span>Pressurized systems</span><span>Industrial plants</span><span>Utility operations</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="wrap grid-2">
+    <div class="diagram">
+      <div class="lines">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M22,22 C34,30 38,38 50,50" fill="none" stroke="rgba(92,143,177,.45)" stroke-width="0.45"/>
+          <path d="M78,22 C66,30 62,38 50,50" fill="none" stroke="rgba(92,143,177,.45)" stroke-width="0.45"/>
+          <path d="M22,78 C34,70 38,62 50,50" fill="none" stroke="rgba(92,143,177,.45)" stroke-width="0.45"/>
+          <path d="M78,78 C66,70 62,62 50,50" fill="none" stroke="rgba(92,143,177,.45)" stroke-width="0.45"/>
+        </svg>
+      </div>
+      <div class="center-box"><small>Framework</small><h3>Asset control</h3><p>A central operating discipline for the asset base, maintenance planning, and ongoing reliability improvement.</p></div>
+      <div class="node tl"><small>Asset layer</small><h4>Asset base</h4><p>Critical equipment is organized through clearer registers, grouping, and hierarchy.</p></div><div class="node tr"><small>Asset layer</small><h4>Maintenance plan</h4><p>Maintenance cadence supports more consistent reliability performance.</p></div><div class="node bl"><small>Asset layer</small><h4>Reliability view</h4><p>Condition, usage, and maintenance performance stay easier to monitor.</p></div><div class="node br"><small>Asset layer</small><h4>Lean improvement</h4><p>Maintenance workflows are refined to reduce waste and delay.</p></div>
+    </div>
+    <div class="copy">
+      <div class="head" style="grid-template-columns:1fr;margin-bottom:18px">
+        <h2>A visible system makes asset performance easier to manage.</h2>
+        <p>This framework connects the asset base, maintenance planning, reliability view, and continuous improvement into one operating model. It is designed to feel practical to maintenance, engineering, and operations leaders.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head">
+      <h2>How asset management support improves performance.</h2>
+      <p>The service approach organizes the asset base, strengthens maintenance discipline, improves visibility into performance, and applies process improvement methods that support more consistent execution.</p>
+    </div>
+    <div class="process"><div class="step"><div class="num">01</div><h4>Organize the asset base</h4><p>Create a clearer structure for asset data, equipment grouping, and criticality.</p></div><div class="step"><div class="num">02</div><h4>Build maintenance discipline</h4><p>Establish planning, scheduling, documentation, and work order routines.</p></div><div class="step"><div class="num">03</div><h4>Improve visibility</h4><p>Make asset status, condition, and maintenance performance easier to monitor.</p></div><div class="step"><div class="num">04</div><h4>Refine the workflow</h4><p>Apply Lean Six Sigma methods to reduce waste and improve consistency.</p></div></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="head">
+      <h2>What stronger asset management delivers.</h2>
+      <p>The value remains tied to the outcomes asset-heavy organizations care about most: better visibility, lower reactivity, stronger maintenance consistency, and improved reliability across critical equipment.</p>
+    </div>
+    <div class="results"><div class="result"><strong>Better</strong><span>Visibility into the asset base and the current maintenance picture.</span></div><div class="result"><strong>Lower</strong><span>Dependence on reactive maintenance and unplanned response.</span></div><div class="result"><strong>Stronger</strong><span>Consistency in maintenance planning and execution.</span></div><div class="result"><strong>Longer</strong><span>Improved support for reliability and asset lifecycle value.</span></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head">
+      <h2>Asset environments supported by stronger maintenance discipline.</h2>
+      <p>The service is suitable for industrial and utility settings where critical equipment performance depends on organized asset data, planned maintenance, and more consistent operating workflows.</p>
+    </div>
+    <div class="gallery"><div class="tile"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1400&q=80" alt="Process facilities"><div class="overlay"><h4>Process facilities</h4><p>Structured support for equipment-intensive operating environments.</p></div></div><div class="tile"><img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1400&q=80" alt="Mechanical systems"><div class="overlay"><h4>Mechanical systems</h4><p>Maintenance systems aligned to equipment criticality and uptime.</p></div></div><div class="tile"><img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1400&q=80" alt="Utility assets"><div class="overlay"><h4>Utility assets</h4><p>Clearer visibility across distributed and operational asset portfolios.</p></div></div></div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Ready to strengthen asset performance?</h2>
+      <p>Structured asset management improves reliability, reduces reactive maintenance, and creates better control across critical equipment.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="mailto:info@example.com">Request Consultation</a>
+        <a class="btn secondary" href="pmo.html">View PMO Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">© Rizwan Advisory — Industrial PMO and asset management services.</div>
+</footer>
+</body>
+</html>

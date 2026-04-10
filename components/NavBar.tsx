@@ -2,12 +2,22 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
 const navItems = [
-  { label: "Services", href: "#services" },
+  {
+    label: "Services",
+    href: "/services",
+    submenu: [
+      { label: "Asset Management", href: "/services/project-management/asset" },
+      { label: "Electrical Engineering", href: "/services/electrical-engineering" },
+      { label: "PMO Services", href: "/services/project-management/pmo" },
+      { label: "Software Engineering", href: "/services/software-engineering" },
+      { label: "Systems Integration", href: "/services/systems-integration" },
+    ].sort((a, b) => a.label.localeCompare(b.label)),
+  },
   { label: "Why Ishpath", href: "#why-ishpath" },
   { label: "Approach ", href: "#howwework"},
   { label: "Contact", href: "#contact" },
@@ -53,6 +63,8 @@ const MoonIcon = () => (
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownTimeout = useRef<NodeJS.Timeout | null>(null);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -62,6 +74,15 @@ export default function Navbar() {
 
   const toggleTheme = () =>
     setTheme(theme === "dark" ? "light" : "dark");
+
+  // Dropdown handlers
+  const handleDropdownEnter = () => {
+    if (dropdownTimeout.current) clearTimeout(dropdownTimeout.current);
+    setDropdownOpen(true);
+  };
+  const handleDropdownLeave = () => {
+    dropdownTimeout.current = setTimeout(() => setDropdownOpen(false), 120);
+  };
 
   return (
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
@@ -112,13 +133,52 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className="hidden items-center gap-6 text-sm text-slate-700 dark:text-slate-200 md:flex">
           {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="hover:text-emerald-600 dark:hover:text-emerald-400"
-            >
-              {item.label}
-            </a>
+            item.submenu ? (
+              <div
+                key={item.label}
+                className="relative"
+                onMouseEnter={handleDropdownEnter}
+                onMouseLeave={handleDropdownLeave}
+                onFocus={handleDropdownEnter}
+                onBlur={handleDropdownLeave}
+                tabIndex={0}
+              >
+                <button
+                  type="button"
+                  className="hover:text-emerald-600 dark:hover:text-emerald-400 flex items-center gap-1 focus:outline-none bg-transparent border-0 p-0"
+                  aria-haspopup="true"
+                  aria-expanded={dropdownOpen}
+                  tabIndex={0}
+                >
+                  {item.label}
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+                <div
+                  className={`absolute left-0 top-full z-50 mt-2 min-w-[220px] rounded-md bg-white p-2 shadow-lg ring-1 ring-black ring-opacity-5 transition-opacity duration-150 dark:bg-slate-800 ${dropdownOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+                >
+                  <div className="flex flex-col gap-1">
+                    {item.submenu.map((s) => (
+                      <a
+                        key={s.href}
+                        href={s.href}
+                        className="rounded px-3 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-700"
+                        tabIndex={dropdownOpen ? 0 : -1}
+                      >
+                        {s.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <a
+                key={item.href}
+                href={item.href}
+                className="hover:text-emerald-600 dark:hover:text-emerald-400"
+              >
+                {item.label}
+              </a>
+            )
           ))}
 
           {/* Theme toggle desktop */}
@@ -150,14 +210,38 @@ export default function Navbar() {
         <div className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950 md:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-3 text-sm text-slate-700 dark:text-slate-200">
             {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="py-1 hover:text-emerald-600 dark:hover:text-emerald-400"
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </a>
+              item.submenu ? (
+                <div key={item.label}>
+                  <a
+                    href={item.href}
+                    className="py-1 hover:text-emerald-600 dark:hover:text-emerald-400"
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                  <div className="ml-3 mt-1 flex flex-col gap-1">
+                    {item.submenu.map((s) => (
+                      <a
+                        key={s.href}
+                        href={s.href}
+                        className="py-1 text-sm text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400"
+                        onClick={() => setOpen(false)}
+                      >
+                        {s.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="py-1 hover:text-emerald-600 dark:hover:text-emerald-400"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </a>
+              )
             ))}
             <a
               href="#contact"

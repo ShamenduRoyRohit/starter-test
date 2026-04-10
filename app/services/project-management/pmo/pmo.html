@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PMO Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f7fa;
+  --surface:#ffffff;
+  --surface-2:#eef3f7;
+  --ink:#172633;
+  --muted:#60717f;
+  --line:rgba(23,38,51,.08);
+  --navy:#0e1a24;
+  --navy-2:#142736;
+  --blue:#5c8fb1;
+  --gold:#c6923d;
+  --shadow:0 14px 40px rgba(9,20,30,.08);
+  --radius:22px;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+.topbar{position:sticky;top:0;z-index:100;background:rgba(14,26,36,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;justify-content:space-between;align-items:center;min-height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;letter-spacing:.02em}
+.brand-mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--blue),#2f566f)}
+.nav-links{display:flex;gap:8px;flex-wrap:wrap}
+.nav-links a{color:#dbe6ee;padding:10px 14px;border-radius:999px;font-size:14px}
+.nav-links a.active,.nav-links a:hover{background:rgba(255,255,255,.08);color:#fff}
+.hero{position:relative;color:#fff;padding:110px 0 90px;background:linear-gradient(rgba(10,18,28,.56),rgba(10,18,28,.62)), url('https://images.unsplash.com/photo-1729368112752-352c47d929f6?auto=format&fit=crop&w=2200&q=80') center/cover no-repeat}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:end}
+.eyebrow{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.12);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:700}
+.hero h1{font-size:clamp(42px,6vw,70px);line-height:.95;letter-spacing:-.04em;max-width:10ch;margin:18px 0}
+.hero p{max-width:650px;font-size:18px;color:#d5e1ea;margin:0 0 26px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:999px;font-weight:700}
+.btn.primary{background:#fff;color:#152634}
+.btn.secondary{border:1px solid rgba(255,255,255,.14);color:#fff;background:rgba(255,255,255,.05)}
+.hero-card{background:rgba(16,31,42,.82);border:1px solid rgba(255,255,255,.1);padding:24px;border-radius:24px;box-shadow:var(--shadow)}
+.hero-card h3{margin:0 0 12px;font-size:24px}
+.hero-card p{font-size:15px;margin:0 0 10px;color:#d5e1ea}
+.hero-card ul{margin:0;padding-left:18px;color:#eef4f8}
+.band{margin-top:-30px;position:relative;z-index:5}
+.band-grid{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+.band-item{padding:24px;border-right:1px solid var(--line)}
+.band-item:last-child{border-right:none}
+.band-item small{display:block;color:#48667c;text-transform:uppercase;font-weight:800;letter-spacing:.12em;margin-bottom:8px}
+.band-item h3{margin:0 0 8px;font-size:24px;line-height:1.05}
+.band-item p{margin:0;color:var(--muted)}
+.section{padding:84px 0}
+.section.alt{background:linear-gradient(180deg,#eef3f7,#f7fafc)}
+.head{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:end;margin-bottom:28px}
+.head h2{margin:0;font-size:clamp(30px,4vw,50px);line-height:.98;letter-spacing:-.04em}
+.head p{margin:0;color:var(--muted);font-size:17px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:var(--surface);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 10px;font-size:28px;line-height:1}
+.card p{margin:0;color:var(--muted)}
+.card ul{list-style:none;margin:18px 0 0;padding:0}
+.card li{padding:11px 0;border-top:1px solid var(--line)}
+.num{width:40px;height:40px;border-radius:12px;background:var(--surface-2);display:grid;place-items:center;font-weight:800;color:#3a5e75;margin-bottom:16px}
+.feature{overflow:hidden}
+.feature img{width:100%;height:100%;min-height:420px;object-fit:cover}
+.copy h3{font-size:38px;line-height:.98;letter-spacing:-.04em;margin:0 0 12px}
+.copy p{margin:0 0 16px;color:var(--muted);font-size:17px}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills span{background:var(--surface-2);padding:10px 14px;border-radius:999px;font-weight:700;color:#35546a;font-size:14px}
+.dark{background:linear-gradient(180deg,#132331,#0f1b25);color:#fff}
+.dark .head p,.dark .copy p{color:#c6d5de}
+.diagram{background:linear-gradient(180deg,#fff,#edf3f7);border-radius:28px;padding:24px;box-shadow:var(--shadow);position:relative;min-height:460px}
+.center-box{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:240px;aspect-ratio:1;border-radius:28px;background:linear-gradient(180deg,#173247,#112333);color:#fff;padding:24px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.center-box small,.node small{display:block;text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:11px;opacity:.75;margin-bottom:8px}
+.center-box h3,.node h4{margin:0 0 8px;line-height:1}
+.center-box p,.node p{margin:0;font-size:14px;line-height:1.55}
+.node{position:absolute;width:210px;background:#fff;border-radius:20px;padding:16px;box-shadow:var(--shadow)}
+.node.tl{left:18px;top:18px}.node.tr{right:18px;top:18px}.node.bl{left:18px;bottom:18px}.node.br{right:18px;bottom:18px}
+.lines{position:absolute;inset:0}
+.lines svg{width:100%;height:100%}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{background:linear-gradient(180deg,#173247,#112333);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:22px}
+.step .num{background:rgba(255,255,255,.08);color:#fff}
+.step h4{margin:0 0 10px;font-size:22px}.step p{margin:0;color:#c6d5de}
+.results{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.result{background:#fff;border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+.result strong{display:block;font-size:30px;line-height:1;margin-bottom:8px;color:#173247}
+.result span{color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery .tile{position:relative;overflow:hidden;border-radius:22px;box-shadow:var(--shadow)}
+.gallery img{width:100%;height:240px;object-fit:cover}
+.tile .overlay{position:absolute;inset:auto 0 0 0;padding:18px;background:linear-gradient(180deg,transparent,rgba(10,18,28,.84));color:#fff}
+.tile h4{margin:0 0 6px;font-size:20px}.tile p{margin:0;color:#dce7ef;font-size:14px}
+.cta{padding:10px 0 100px}
+.cta-box{background:linear-gradient(135deg,#122434,#0f1a24);color:#fff;border-radius:30px;padding:42px;box-shadow:var(--shadow)}
+.cta-box h2{margin:0 0 12px;font-size:clamp(32px,4vw,52px);line-height:.95;letter-spacing:-.04em;max-width:12ch}
+.cta-box p{margin:0 0 20px;color:#d4e0e8;max-width:720px}
+.footer{padding:18px 0 36px;color:#708391;font-size:14px}
+@media (max-width:980px){
+  .hero-grid,.head,.grid-3,.grid-2,.process,.results,.gallery{grid-template-columns:1fr}
+  .band-grid{grid-template-columns:1fr}
+  .band-item{border-right:none;border-bottom:1px solid var(--line)}
+  .band-item:last-child{border-bottom:none}
+  .diagram{min-height:auto;display:grid;gap:14px}
+  .center-box,.node{position:relative;left:auto;right:auto;top:auto;bottom:auto;transform:none;width:auto}
+  .lines{display:none}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <nav class="nav-links">
+      <a class="active" href="pmo.html">PMO Services</a>
+      <a class="" href="asset.html">Asset Management</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">PMO Services</span>
+      <h1>Project controls and risk management for industrial projects.</h1>
+      <p>PMO services built for capital projects, shutdowns, upgrades, and field-led programs where cost, schedule, and risk need to stay visible throughout execution. The focus is practical control, cleaner reporting, and stronger delivery discipline.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#services">Explore Services</a>
+        <a class="btn secondary" href="#contact">Request Consultation</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h3>PMO service focus</h3>
+      <p>A stronger PMO environment creates confidence across active projects and reduces the uncertainty that builds when controls are weak or fragmented.</p>
+      <ul><li>Project controls and forecasting</li><li>Schedule monitoring and progress visibility</li><li>Risk registers and mitigation tracking</li><li>Lean delivery support and reporting discipline</li></ul>
+    </aside>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <div class="band-grid"><div class="band-item"><small>Controls</small><h3>Project Controls</h3><p>Cost tracking, schedule visibility, forecasting, variance review, and performance reporting aligned to active work.</p></div><div class="band-item"><small>Risk</small><h3>Risk Management</h3><p>Clear risk identification, ownership, mitigation planning, and issue escalation throughout the project lifecycle.</p></div><div class="band-item"><small>Delivery</small><h3>Lean Execution</h3><p>Simplified routines and cleaner workflows that reduce project friction and improve coordination.</p></div></div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head">
+      <h2>PMO services that support control, visibility, and delivery confidence.</h2>
+      <p>The page is structured around the capabilities clients expect to see on a credible PMO service line: project controls, risk management, and lean execution support. Each service block stays direct, practical, and aligned to industrial delivery environments.</p>
+    </div>
+    <div class="grid-3"><div class="card"><div class="num">01</div><h3>Project Controls</h3><p>Project controls establish the performance view of the project. Cost, forecast, progress, and schedule data are organized into a structure that supports decisions rather than generating reporting noise.</p><ul><li>Cost tracking and forecasting</li><li>Schedule development and monitoring</li><li>Progress measurement and variance review</li><li>Project reporting for management and field teams</li></ul></div><div class="card"><div class="num">02</div><h3>Risk Management</h3><p>Risk management creates an earlier view of exposure so action can happen before delay, budget pressure, and rework build into larger problems. The emphasis stays on clarity and accountability.</p><ul><li>Risk identification workshops</li><li>Risk registers and ownership logic</li><li>Mitigation tracking and closeout follow-through</li><li>Issue escalation and risk review cycles</li></ul></div><div class="card"><div class="num">03</div><h3>Lean Delivery Support</h3><p>Lean delivery support improves the way project routines function. Planning, reporting, meetings, and coordination are tightened so teams can move work forward with less friction.</p><ul><li>Workflow simplification</li><li>Reduced duplication in reporting</li><li>Cleaner decision and meeting cadence</li><li>More usable controls during execution</li></ul></div></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap grid-2">
+    <div class="card feature"><img src="https://images.unsplash.com/photo-1636790921342-cbdc4b783de6?auto=format&fit=crop&w=2200&q=80" alt=""></div>
+    <div class="card copy">
+      <h3>Designed for projects where field conditions shape execution.</h3>
+      <p>Industrial projects rarely run in perfect conditions. Site access, contractor interfaces, equipment dependencies, shutdown windows, procurement pressure, and stakeholder reporting demands all influence project performance. PMO support needs to reflect that reality and bring structure without adding unnecessary overhead.</p>
+      <div class="pills"><span>Capital projects</span><span>Turnarounds and shutdowns</span><span>Equipment upgrades</span><span>Field-led reporting</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="wrap grid-2">
+    <div class="diagram">
+      <div class="lines">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M22,22 C34,30 38,38 50,50" fill="none" stroke="rgba(92,143,177,.45)" stroke-width="0.45"/>
+          <path d="M78,22 C66,30 62,38 50,50" fill="none" stroke="rgba(92,143,177,.45)" stroke-width="0.45"/>
+          <path d="M22,78 C34,70 38,62 50,50" fill="none" stroke="rgba(92,143,177,.45)" stroke-width="0.45"/>
+          <path d="M78,78 C66,70 62,62 50,50" fill="none" stroke="rgba(92,143,177,.45)" stroke-width="0.45"/>
+        </svg>
+      </div>
+      <div class="center-box"><small>Framework</small><h3>Project control</h3><p>A central operating discipline for cost, schedule, risk, and execution visibility.</p></div>
+      <div class="node tl"><small>Control</small><h4>Cost & forecast</h4><p>Budget movement and forecast trends remain visible through delivery.</p></div><div class="node tr"><small>Control</small><h4>Schedule & progress</h4><p>Milestones, dependencies, slippage, and progress stay easier to read.</p></div><div class="node bl"><small>Control</small><h4>Risk & response</h4><p>Exposure, mitigation action, and escalation stay structured and current.</p></div><div class="node br"><small>Control</small><h4>Execution flow</h4><p>Reporting and coordination remain practical instead of bureaucratic.</p></div>
+    </div>
+    <div class="copy">
+      <div class="head" style="grid-template-columns:1fr;margin-bottom:18px">
+        <h2>A PMO framework should make project performance easier to understand.</h2>
+        <p>The framework on this page connects cost, schedule, risk, and execution flow into one clear operating view. It mirrors the way stronger engineering and advisory websites present capability: simple structure, clear naming, and visible logic.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head">
+      <h2>How PMO support strengthens active projects.</h2>
+      <p>The service approach starts with structure, creates better visibility, maintains risk discipline, and improves the cadence of delivery so project teams are working from a clearer operating model.</p>
+    </div>
+    <div class="process"><div class="step"><div class="num">01</div><h4>Establish the baseline</h4><p>Set up the cost, schedule, and reporting structure required for meaningful control.</p></div><div class="step"><div class="num">02</div><h4>Create visibility</h4><p>Track performance movement, expose issues early, and keep forecast logic current.</p></div><div class="step"><div class="num">03</div><h4>Manage risk</h4><p>Maintain active risk review, ownership, and mitigation discipline throughout execution.</p></div><div class="step"><div class="num">04</div><h4>Improve flow</h4><p>Simplify routines and communication paths so decisions move faster and cleaner.</p></div></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="head">
+      <h2>What stronger PMO support delivers.</h2>
+      <p>The value stays tied to the outcomes industrial clients care about most: clearer visibility, earlier issue recognition, tighter control, and more efficient delivery routines.</p>
+    </div>
+    <div class="results"><div class="result"><strong>Clearer</strong><span>Project reporting that is easier to read, easier to trust, and easier to act on.</span></div><div class="result"><strong>Earlier</strong><span>Schedule pressure and risk exposure become visible sooner.</span></div><div class="result"><strong>Tighter</strong><span>Cost, forecast, and progress control remain more disciplined.</span></div><div class="result"><strong>Leaner</strong><span>Reporting and coordination cycles become more efficient.</span></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head">
+      <h2>Project environments supported by PMO discipline.</h2>
+      <p>The service is suitable for industrial project settings where structured controls, reliable reporting, and active risk management contribute directly to delivery performance.</p>
+    </div>
+    <div class="gallery"><div class="tile"><img src="https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?auto=format&fit=crop&w=1400&q=80" alt="Capital projects"><div class="overlay"><h4>Capital projects</h4><p>Structured controls for large and mid-sized capital work.</p></div></div><div class="tile"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80" alt="Industrial construction"><div class="overlay"><h4>Industrial construction</h4><p>Field-ready visibility across cost, progress, and schedule.</p></div></div><div class="tile"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80" alt="Equipment upgrades"><div class="overlay"><h4>Equipment upgrades</h4><p>Clearer coordination during active installation and commissioning.</p></div></div></div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Ready to strengthen project delivery?</h2>
+      <p>Structured PMO support improves visibility, reduces uncertainty, and creates a stronger delivery environment for industrial projects.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="mailto:info@example.com">Request Consultation</a>
+        <a class="btn secondary" href="asset.html">View Asset Management</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">© Rizwan Advisory — Industrial PMO and asset management services.</div>
+</footer>
+</body>
+</html>
