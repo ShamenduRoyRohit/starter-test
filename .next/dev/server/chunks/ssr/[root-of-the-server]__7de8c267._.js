@@ -31,6 +31,45 @@ function ThemeProvider({ children }) {
     }, this);
 }
 }),
+"[project]/components/ChatbotWidget.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>ChatbotWidget
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+"use client";
+;
+function ChatbotWidget() {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        // create a container for the chatbot widget
+        const container = document.createElement("div");
+        container.id = "chatbot-root";
+        // position so it's visible by default (adjust CSS as needed)
+        container.style.position = "fixed";
+        container.style.bottom = "24px";
+        container.style.right = "24px";
+        container.style.zIndex = "9999";
+        document.body.appendChild(container);
+        // append the external script so it executes
+        const s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js";
+        s.id = "chatbot";
+        s.setAttribute("environmentId", "bf9b00bd-7dc6-e0f2-92c7-9bdc3afed4f0");
+        s.crossOrigin = "anonymous";
+        document.body.appendChild(s);
+        return ()=>{
+            // cleanup
+            if (s.parentNode) s.parentNode.removeChild(s);
+            if (container.parentNode) container.parentNode.removeChild(container);
+        };
+    }, []);
+    return null;
+}
+}),
 "[project]/components/NavBar.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -496,36 +535,6 @@ function Navbar() {
     }, this);
 }
 }),
-"[externals]/next/dist/server/app-render/work-async-storage.external.js [external] (next/dist/server/app-render/work-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("next/dist/server/app-render/work-async-storage.external.js", () => require("next/dist/server/app-render/work-async-storage.external.js"));
-
-module.exports = mod;
-}),
-"[externals]/next/dist/server/app-render/work-unit-async-storage.external.js [external] (next/dist/server/app-render/work-unit-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("next/dist/server/app-render/work-unit-async-storage.external.js", () => require("next/dist/server/app-render/work-unit-async-storage.external.js"));
-
-module.exports = mod;
-}),
-"[externals]/next/dist/server/app-render/action-async-storage.external.js [external] (next/dist/server/app-render/action-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("next/dist/server/app-render/action-async-storage.external.js", () => require("next/dist/server/app-render/action-async-storage.external.js"));
-
-module.exports = mod;
-}),
-"[externals]/next/dist/server/app-render/after-task-async-storage.external.js [external] (next/dist/server/app-render/after-task-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("next/dist/server/app-render/after-task-async-storage.external.js", () => require("next/dist/server/app-render/after-task-async-storage.external.js"));
-
-module.exports = mod;
-}),
-"[externals]/next/dist/server/app-render/dynamic-access-async-storage.external.js [external] (next/dist/server/app-render/dynamic-access-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("next/dist/server/app-render/dynamic-access-async-storage.external.js", () => require("next/dist/server/app-render/dynamic-access-async-storage.external.js"));
-
-module.exports = mod;
-}),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__005c8486._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__7de8c267._.js.map

@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import ChatbotWidget from "@/components/ChatbotWidget";
 import Navbar from "@/components/NavBar";
 
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </ThemeProvider>
+        <ChatbotWidget />
       </body>
     </html>
   );
