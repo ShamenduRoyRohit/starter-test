@@ -38,248 +38,26 @@ __turbopack_context__.s([
     "default",
     ()=>ChatbotWidget
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 "use client";
 ;
-;
-// Use NEXT_PUBLIC_ prefix so the variable is available on the client
 const ENV_ID = ("TURBOPACK compile-time value", "bf9b00bd-7dc6-e0f2-92c7-9bdc3afed4f0") ?? "";
 function ChatbotWidget() {
-    const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [showLauncher, setShowLauncher] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
-    // helper: try to detect provider's built-in launcher
-    const detectProviderLauncher = ()=>{
-        // common heuristics: provider may inject an iframe or a div with identifiable attributes
-        const btnSelectors = [
-            'iframe[src*="customerconnect"]',
-            'iframe[src*="onecdn"]',
-            'div[id*="customerconnect"]',
-            'div[class*="customerconnect"]',
-            'div[class*="cc-"]',
-            'div[class*="microsoft"]'
-        ];
-        try {
-            return !!document.querySelector(btnSelectors.join(','));
-        } catch (e) {
-            return false;
-        }
-    };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        // if provider is already present (loaded elsewhere), hide our launcher
         if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
         ;
+        if ("TURBOPACK compile-time truthy", 1) return;
+        //TURBOPACK unreachable
+        ;
+        // create a container that providers sometimes expect to be present
+        let container;
+        // targeted error handler: suppress transient `contentWindow` null errors from provider script
+        const onError = undefined;
+        const loadScript = undefined;
+        // slight delay so container is settled in the DOM before provider runs
+        const t = undefined;
     }, []);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        let s = null;
-        // When the panel is opened, lazy-load the provider script so it can mount into #chatbot-root
-        if (open && !document.getElementById("chatbot")) {
-            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
-            ;
-            setLoading(true);
-            s = document.createElement("script");
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js";
-            s.id = "chatbot";
-            s.setAttribute("environmentId", ENV_ID);
-            s.crossOrigin = "anonymous";
-            s.onload = ()=>{
-                setLoading(false);
-                // give the provider a moment to inject its UI, then detect and hide our launcher if needed
-                setTimeout(()=>{
-                    if (detectProviderLauncher()) setShowLauncher(false);
-                }, 500);
-            };
-            s.onerror = ()=>{
-                setLoading(false);
-                console.error("Failed to load chatbot script");
-            };
-            document.body.appendChild(s);
-        }
-        return ()=>{
-            // Remove script when component unmounts or when closed (optional)
-            if (!open) {
-                const existing = document.getElementById("chatbot");
-                if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
-                const root = document.getElementById("chatbot-root");
-                if (root) root.innerHTML = "";
-                // ensure we show our launcher again if provider removed
-                setShowLauncher(true);
-            }
-        };
-    }, [
-        open
-    ]);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "fixed bottom-6 right-6 z-50 flex flex-col items-end",
-        children: [
-            open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-3 w-[320px] md:w-[420px] h-[480px] md:h-[600px] bg-white dark:bg-slate-900 rounded-xl shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center justify-between px-3 py-2 border-b border-slate-100 dark:border-slate-800",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "h-8 w-8 rounded-md bg-emerald-600 flex items-center justify-center text-white font-semibold",
-                                        children: "IS"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ChatbotWidget.tsx",
-                                        lineNumber: 89,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-sm font-medium",
-                                        children: "Chat with us"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ChatbotWidget.tsx",
-                                        lineNumber: 90,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/ChatbotWidget.tsx",
-                                lineNumber: 88,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-2",
-                                children: [
-                                    loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-xs text-slate-500",
-                                        children: "Loading…"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ChatbotWidget.tsx",
-                                        lineNumber: 94,
-                                        columnNumber: 17
-                                    }, this) : null,
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        "aria-label": "Close chat",
-                                        onClick: ()=>setOpen(false),
-                                        className: "rounded-md p-1 text-slate-600 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800",
-                                        children: "✕"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ChatbotWidget.tsx",
-                                        lineNumber: 96,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/ChatbotWidget.tsx",
-                                lineNumber: 92,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/ChatbotWidget.tsx",
-                        lineNumber: 87,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        id: "chatbot-root",
-                        className: "flex-1 bg-white dark:bg-slate-900",
-                        children: [
-                            loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex h-full items-center justify-center text-sm text-slate-500",
-                                children: "Initializing chat…"
-                            }, void 0, false, {
-                                fileName: "[project]/components/ChatbotWidget.tsx",
-                                lineNumber: 109,
-                                columnNumber: 15
-                            }, this),
-                            !ENV_ID && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex h-full items-center justify-center text-sm text-slate-500 p-4",
-                                children: [
-                                    "Chat is not configured. Add ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
-                                        children: "NEXT_PUBLIC_CHATBOT_ENVIRONMENT_ID"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ChatbotWidget.tsx",
-                                        lineNumber: 112,
-                                        columnNumber: 127
-                                    }, this),
-                                    " to your ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
-                                        children: ".env.local"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ChatbotWidget.tsx",
-                                        lineNumber: 112,
-                                        columnNumber: 183
-                                    }, this),
-                                    "."
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/ChatbotWidget.tsx",
-                                lineNumber: 112,
-                                columnNumber: 15
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/ChatbotWidget.tsx",
-                        lineNumber: 106,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "px-3 py-2 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500",
-                        children: "By using this chat you agree to our privacy policy."
-                    }, void 0, false, {
-                        fileName: "[project]/components/ChatbotWidget.tsx",
-                        lineNumber: 116,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/ChatbotWidget.tsx",
-                lineNumber: 86,
-                columnNumber: 9
-            }, this),
-            showLauncher && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                onClick: ()=>setOpen((v)=>!v),
-                "aria-label": "Open chat",
-                className: "flex h-14 w-14 items-center justify-center rounded-full bg-emerald-600 text-white shadow-lg hover:scale-105 active:scale-95 transition-transform",
-                children: open ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "sr-only",
-                    children: "Close chat"
-                }, void 0, false, {
-                    fileName: "[project]/components/ChatbotWidget.tsx",
-                    lineNumber: 129,
-                    columnNumber: 13
-                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                    xmlns: "http://www.w3.org/2000/svg",
-                    className: "h-6 w-6",
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    stroke: "currentColor",
-                    strokeWidth: 2,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                        strokeLinecap: "round",
-                        strokeLinejoin: "round",
-                        d: "M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4-.8L3 21l1.8-4A7.966 7.966 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                    }, void 0, false, {
-                        fileName: "[project]/components/ChatbotWidget.tsx",
-                        lineNumber: 132,
-                        columnNumber: 15
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/ChatbotWidget.tsx",
-                    lineNumber: 131,
-                    columnNumber: 13
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/ChatbotWidget.tsx",
-                lineNumber: 123,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/ChatbotWidget.tsx",
-        lineNumber: 84,
-        columnNumber: 5
-    }, this);
+    return null;
 }
 }),
 "[project]/components/NavBar.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {

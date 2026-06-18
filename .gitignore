@@ -47,3 +47,4 @@ LOG/*
 
 # Keep public assets, source code, configs and lockfiles tracked for deployment
 # (package.json, package-lock.json / yarn.lock, next.config.mjs, tsconfig.json, app/, public/ etc.)
+.next/dev/logs/next-development.log
