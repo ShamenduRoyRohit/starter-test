@@ -63,7 +63,7 @@ function ChatbotWidget() {
                 document.body.appendChild(container);
             }
             // avoid double-inject
-            if (document.getElementById("microsoft-chatbot-script")) return;
+            if (document.getElementById("chatbot")) return;
             // targeted error handler: suppress transient `contentWindow` null errors from provider script
             const onError = {
                 "ChatbotWidget.useEffect.onError": (ev)=>{
@@ -86,7 +86,7 @@ function ChatbotWidget() {
                     s.type = "text/javascript";
                     s.async = true;
                     s.src = "https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js";
-                    s.id = "microsoft-chatbot-script";
+                    s.id = "chatbot";
                     s.setAttribute("environmentId", ENV_ID);
                     s.crossOrigin = "anonymous";
                     s.onload = ({

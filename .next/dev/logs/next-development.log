@@ -29,3 +29,18 @@
 [00:00:17.406] Browser LOG     Microsoft CustomerConnect script loaded
 [00:01:21.591] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'contentWindow')
 [00:01:21.591] Browser WARN    Suppressed transient provider error: Uncaught TypeError: Cannot read properties of null (reading 'contentWindow')
+[00:02:23.752] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:23.752] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:23.752] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:23.752] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:23.752] Browser WARN    Image with src "/slide4.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:07:48.253] Server  LOG     ✓ Compiled in 453ms
+[00:08:13.763] Server  LOG     ✓ Compiled in 46ms
+[00:08:23.762] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'contentWindow')
+[00:08:23.762] Browser WARN    Suppressed transient provider error: Uncaught TypeError: Cannot read properties of null (reading 'contentWindow')
+[00:08:26.390] Browser WARN    Image with src "/slide1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:26.390] Browser WARN    Image with src "/slide2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:26.390] Browser WARN    Image with src "/slide3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:26.390] Browser WARN    Image with src "/slide4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:26.390] Browser LOG     Microsoft CustomerConnect script loaded
